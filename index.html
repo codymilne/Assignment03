@@ -6,23 +6,34 @@
 		<!-- link to your script file here -->
 		
 	</head>
-
+	<!-- Your UI controls go here -->
 	<body>
 		<h1>Fancify my Text</h1>
 		<form>
 			<fieldset>
-			  <legend>Choose your favorite monster</legend>
+				<legend>Text</legend>
 
-				<label for="fancifyBox">Facify Textbox:</label>
+					<textarea id="textOriginal" name="textOriginal" rows="4" cols="30">
+					</textarea>
 
-				<textarea id="fancifyBox" name="fancifyBox" rows="4" cols="30">
-				Add text here
-				</textarea>
-				
 			</fieldset>
 		</form>
 
-		<!-- Your UI controls go here -->
+		<form>
+			<fieldset>
+				<legend>Fancify</legend>
+
+				<button name="Bigger">Bigger!</button><br>
+
+				<input type="radio" id="FancyShmancy" name="text_choice" value="FancyShmancy">
+				<label for="FancyShmancy">FancyShmancy</label><br>
+				<input type="radio" id="BoringBetty" name="text_choice" value="BoringBetty">
+				<label for="BoringBetty">BoringBetty</label><br>
+
+			</fieldset>
+		</form>
+
+		
 		
 	</body>
 </html>
