@@ -10,31 +10,30 @@
 	<!-- Your UI controls go here -->
 	<body>
 		<h1>Fancify my Text</h1>
-		<form>
-			<fieldset>
-				<legend>Text</legend>
+		
+		<fieldset>
+			<legend>Text</legend>
 
-					<textarea id="textOriginal" name="textOriginal" rows="4" cols="30">
-					</textarea>
+				<textarea id="textOriginal" name="textOriginal" rows="4" cols="30">
+				</textarea>
 
-			</fieldset>
-		</form>
-
-		<form>
-			<fieldset>
-				<legend>Fancify</legend>
-
-				<button onclick="bigger();">Bigger!</button><br>
-
-				<input type="radio" id="FancyShmancy" name="text_choice" value="FancyShmancy">
-				<label for="FancyShmancy">FancyShmancy</label><br>
-				<input type="radio" id="BoringBetty" name="text_choice" value="BoringBetty">
-				<label for="BoringBetty">BoringBetty</label><br>
-
-			</fieldset>
-		</form>
+		</fieldset>
+		
 
 		
-		
+		<fieldset>
+			<legend>Fancify</legend>
+
+			<button onclick="bigger();">Bigger!</button><br>
+
+			<input type="radio" id="FancyShmancy" name="text_choice" onchange="fancify()">
+			<label for="FancyShmancy">FancyShmancy</label><br>
+			<input type="radio" id="BoringBetty" name="text_choice" onchange="boring()">
+			<label for="BoringBetty">BoringBetty</label><br>
+
+			<button onclick="moo();">Moo</button><br>
+
+		</fieldset>
+
 	</body>
 </html>
